@@ -8,7 +8,10 @@ CORS(app)
 
 @app.route("/")
 def index():
-        return send_file("CommitA.json")
+        return "Hello World"
 
+@app.route("/all")
+def Buche():
+        return send_file("CommitA.json")
 if __name__ == "__main__":
         app.run()
